@@ -1,0 +1,17 @@
+.menu {
+    width: 90%;
+    border-left: 2px solid white;
+    margin: 0 auto;
+    padding: 24px 12px;
+    list-style: none;
+}
+
+.menuItem {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 26px;
+}
+
+.menuItem:last-child {
+    margin-bottom: 0;
+}

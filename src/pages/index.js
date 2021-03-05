@@ -13,6 +13,7 @@ import Merch from "../images/merch.png";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    
     <div className={styles.chunk}>
       <StaticImage className={styles.logoImg} src="../images/iapl-logo.png" alt="IN A PREVIOUS LIFE"
       width={220}/>
