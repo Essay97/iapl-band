@@ -3,12 +3,13 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import * as styles from "./Header.module.css";
 
-const Header = () => {
+const Header = ({ onMenuClick }) => {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.menu}>
+      <div className={styles.menu} >
         <Link to="/"><h1 className={styles.title}>IN A PREVIOUS LIFE</h1></Link>
-        <div className={styles.hamburger}>
+        <div role="button" className={styles.hamburger} tabIndex={0}
+        onClick={onMenuClick} onKeyDown={() => {}}>
           <div className={styles.hamburgerLine}></div>
         </div>
       </div>
