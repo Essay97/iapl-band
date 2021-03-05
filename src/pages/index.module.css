@@ -4,10 +4,6 @@
     align-items: center;
     padding: 0 20px;
     position: relative;
-    height: 100vh;
-}
-
-.firstChunk {
     height: calc(100vh - 146px);
 }
 
