@@ -1,0 +1,73 @@
+.title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #F4EBEB;
+}
+
+.navbar {
+    background-color: #1E1A1A;
+    height: 146px;
+    padding: 37px 20px 25px 20px;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 90px;
+}
+
+.divider {
+    height: 1px;
+    width: 90%;
+    background: #F4EBEB;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5px;
+}
+
+
+/* Menu Icon stuff 
+   TODO animate lines on click*/
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 51px;
+    height: 29px;
+    justify-content: center;
+}
+
+.hamburgerLine {
+    height: 5px;
+    background: #F4EBEB;
+    position: relative;
+}
+
+.hamburgerLine::after {
+    content: '';
+    height: 5px;
+    background: #F4EBEB;
+    width: 51px;
+    position: absolute;
+    top: -10px;
+    transition: 0.5s;
+}
+
+.hamburgerLine::before {
+    content: '';
+    height: 5px;
+    background: #F4EBEB;
+    width: 51px;
+    position: absolute;
+    top: 10px;
+}

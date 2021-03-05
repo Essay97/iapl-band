@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `In A Previous Life`,
+    description: `In A Previous Life is an alternative metal band from Turin. Enjoy their content and keep in touch through this website`,
+    author: `Enrico Saggiorato`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -1,42 +1,28 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import * as styles from "./Header.module.css";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+const Header = () => {
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.menu}>
+        <Link to="/"><h1 className={styles.title}>IN A PREVIOUS LIFE</h1></Link>
+        <div className={styles.hamburger}>
+          <div className={styles.hamburgerLine}></div>
+        </div>
+      </div>
+      <div className={styles.social}>
+        <StaticImage src="../images/instagram.png" alt="Instagram" />
+        <StaticImage src="../images/spotify.png" alt="Spotify" />
+        <StaticImage src="../images/tiktok.png" alt="Tiktok" />
+        <StaticImage src="../images/facebook.png" alt="Facebook" />
+        <StaticImage src="../images/youtube.png" alt="Youtube" />
+      </div>
+      <div className={styles.divider} />
+    </nav>
+  );
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+export default Header;
 
-export default Header

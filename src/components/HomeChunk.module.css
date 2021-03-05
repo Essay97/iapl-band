@@ -1,0 +1,19 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: url("../images/media.png");
+    position: relative;
+}
+
+.btn {
+    width: 186px;
+    height: 73px;
+    position: absolute;
+    top: 25%;  
+    left: 50%; 
+    transform: translateX(-50%);
+    background: linear-gradient(103.03deg, rgba(255, 255, 255, 0.41) -0.57%, rgba(255, 255, 255, 0) 100%);
+    border: 2px solid white;
+    font-size: 30px;
+    color: white;
+}
