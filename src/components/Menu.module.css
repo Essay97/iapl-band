@@ -6,10 +6,15 @@
     list-style: none;
 }
 
+.hide {
+    display: none;
+}
+
 .menuItem {
     font-size: 36px;
     font-weight: normal;
     margin-bottom: 26px;
+    color: white;
 }
 
 .menuItem:last-child {

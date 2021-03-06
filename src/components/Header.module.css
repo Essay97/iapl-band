@@ -36,8 +36,7 @@
 }
 
 
-/* Menu Icon stuff 
-   TODO animate lines on click*/
+/* Menu Icon stuff */
 
 .hamburger {
     display: flex;
@@ -50,8 +49,10 @@
 
 .hamburgerLine {
     height: 5px;
+    width: 51px;
     background: white;
     position: relative;
+    transition: 0.7s;
 }
 
 .hamburgerLine::after {
@@ -61,7 +62,7 @@
     width: 51px;
     position: absolute;
     top: -10px;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .hamburgerLine::before {
@@ -72,3 +73,13 @@
     position: absolute;
     top: 10px;
 }
+
+.rotate {
+    width: calc(51px / 3 * 2);
+    transform: rotate(-90deg);
+}
+
+.rotate::after {
+    width: calc(51px / 3);
+}
+
