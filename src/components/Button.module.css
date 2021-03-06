@@ -1,0 +1,20 @@
+.btn {
+    width: 221px;
+    height: 35px;
+    border-radius: 37px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.black {
+    background: #1E1A1A;
+    color: white;
+    box-shadow: 0px 0px 23px -2px white;
+}
+
+.white {
+    background: white;
+    color: #1E1A1A;
+}
