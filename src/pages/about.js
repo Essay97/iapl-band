@@ -1,5 +1,5 @@
 import * as React from "react";
-import Layout from "../components/layout";
+import PageLayout from "../components/layouts/PageLayout";
 import SEO from "../components/seo";
 import * as styles from './about.module.css'
 import ArticleItem from '../components/ArticleItem';
@@ -20,17 +20,15 @@ const AboutPage = () => {
   const image = query.file.childImageSharp.gatsbyImageData;
 
   return (
-		<Layout>
+		<PageLayout>
 			<SEO title="About Us" />
-      <div className={styles.container}>
-        <h1 className={styles.title}>WHO WE ARE</h1>
-        <iframe className={styles.video} src="https://www.youtube.com/embed/WqwH7m68X5U" frameBorder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowFullScreen title="Without Hate"></iframe>
-        <ArticleItem textFirst title="Our interview with Elon Musk" image={image} />
-        <ArticleItem textFirst title="Our interview for Rolling Stone" image={image} />
-      </div>
-		</Layout>
+      <h1 className={styles.title}>WHO WE ARE</h1>
+      <iframe className={styles.video} src="https://www.youtube.com/embed/WqwH7m68X5U" frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowFullScreen title="Without Hate"></iframe>
+      <ArticleItem textFirst title="Our interview with Elon Musk" image={image} />
+      <ArticleItem textFirst title="Our interview for Rolling Stone" image={image} />
+		</PageLayout>
 	)
 }
 

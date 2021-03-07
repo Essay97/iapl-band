@@ -1,5 +1,5 @@
 import * as React from "react";
-import Layout from "../components/layout";
+import PageLayout from "../components/layouts/PageLayout";
 import SEO from "../components/seo";
 import ArticleItem from '../components/ArticleItem';
 import { graphql, useStaticQuery } from 'gatsby';
@@ -31,14 +31,12 @@ const MediaPage = () => {
   const slideshowImages = query.slideshow.edges.map(elem => elem.node.childImageSharp.gatsbyImageData);
 
   return (
-		<Layout>
+		<PageLayout>
 			<SEO title="Media" />
-      <div className={styles.container}>
-        <Slideshow imageArray={slideshowImages} positionClass={styles.slideshow}/>
-        <ArticleItem title="WATCH OUR LATEST VIDEOCLIP" image={articleImage} />
-        <ArticleItem title="LISTEN TO OUR LATEST SINGLE" image={articleImage} />
-      </div>
-		</Layout>
+      <Slideshow imageArray={slideshowImages} positionClass={styles.slideshow}/>
+      <ArticleItem title="WATCH OUR LATEST VIDEOCLIP" image={articleImage} />
+      <ArticleItem title="LISTEN TO OUR LATEST SINGLE" image={articleImage} />
+		</PageLayout>
 	)
 }
 

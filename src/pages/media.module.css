@@ -1,9 +1,3 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .slideshow {
   margin: 90px 0 160px 0
 }
