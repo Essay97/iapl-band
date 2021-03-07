@@ -1,0 +1,33 @@
+.slider {
+  width: 75vw;
+  height: 75vw;
+  position: relative;
+}
+
+.leftArrow {
+  width: 0; 
+  height: 0; 
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent; 
+  border-right: 25px solid white;
+  top: 50%;
+  left: 5px;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 100;
+  outline: none;
+}
+
+.rightArrow {
+  width: 0; 
+  height: 0; 
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid white;
+  right: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  outline: none;
+}

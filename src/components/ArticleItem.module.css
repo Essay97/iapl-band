@@ -1,0 +1,15 @@
+.card {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  background: white;
+  color: black;
+  font-size: 24px;
+  padding: 4px;
+  min-height: 88px;
+  text-align: center;
+}
