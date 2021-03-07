@@ -16,4 +16,4 @@ const ArticleItem = ({ textFirst, title, image }) => {
   )
 }
 
-export default ArticleItem
+export default ArticleItem;
