@@ -26,7 +26,7 @@ const IndexPage = () => (
        tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum 
        exercitationem ullamco laboriosam, </p>
        
-      <Button text="subscribe" extraClass={styles.btnPosition} />
+      <Button positionClass={styles.btnPosition}>SUBSCRIBE</Button>
     </div>
 
     <HomeChunk image={Media} btnText="Media" btnLink="/media"/>
