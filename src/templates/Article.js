@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import PageLayout from '../components/layouts/PageLayout';
-import './Article.module.css';
+import * as styles from './Article.module.css';
 
 const Article = ({ data }) => {
   const { markdownRemark } = data;
@@ -9,6 +9,9 @@ const Article = ({ data }) => {
 
   return (
     <PageLayout>
+      <div className={styles.article}>
+
+      </div>
       <h1>{frontmatter.title}</h1>
       <h2>{frontmatter.date}</h2>
       <div dangerouslySetInnerHTML={{ __html: html }} />
