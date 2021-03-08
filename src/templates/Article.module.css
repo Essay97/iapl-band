@@ -1,3 +1,15 @@
 .article {
-  width: 90%;
+  width: 80%;
+}
+
+.title {
+  font-size: 46px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 60px;
 }

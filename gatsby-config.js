@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `In A Previous Life`,
     description: `In A Previous Life is an alternative metal band from Turin. Enjoy their content and keep in touch through this website`,
-    author: `Enrico Saggiorato`,
+    author: `In A Previous Life`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

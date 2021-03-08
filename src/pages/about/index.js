@@ -5,7 +5,7 @@ import * as styles from './about.module.css'
 import ArticleItem from '../../components/ArticleItem';
 import { graphql, useStaticQuery } from 'gatsby';
 
-const AboutPage = () => {
+const AboutPage = ({ data }) => {
   const query = useStaticQuery(graphql`
   {
     file(relativePath: {eq: "interview.jpg"}) {
@@ -31,5 +31,7 @@ const AboutPage = () => {
 		</PageLayout>
 	)
 }
+
+/* export const articlesQuery = graphql`` */
 
 export default AboutPage;

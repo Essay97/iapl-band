@@ -10,11 +10,11 @@ const Article = ({ data }) => {
   return (
     <PageLayout>
       <div className={styles.article}>
-
+        <h2 className={styles.date}>{frontmatter.date}</h2>
+        <h1 className={styles.title}>{frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-      <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      
     </PageLayout>
   )
 }
@@ -25,7 +25,7 @@ export const articleQuery = graphql`
       html
       frontmatter {
         title
-        date
+        date(formatString: "D MMMM YYYY")
       }
     }
   }
