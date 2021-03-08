@@ -1,16 +1,18 @@
 import { graphql } from 'gatsby';
-import React from 'react'
+import React from 'react';
+import PageLayout from '../components/layouts/PageLayout';
+import './Article.module.css';
 
 const Article = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
   return (
-    <div>
+    <PageLayout>
       <h1>{frontmatter.title}</h1>
       <h2>{frontmatter.date}</h2>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-    </div>
+    </PageLayout>
   )
 }
 
