@@ -1,7 +1,6 @@
 ---
-slug: "/media/post-2"
 date: "2021-03-18"
-title: "My first blog post"
+title: "My second blog post"
 ---
 
 # Ramis illa enim sua cuiquam

@@ -1,5 +1,4 @@
 ---
-slug: "/about/post-1"
 date: "2021-03-18"
 title: "My first blog post"
 ---

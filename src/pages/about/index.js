@@ -1,8 +1,8 @@
 import * as React from "react";
-import PageLayout from "../components/layouts/PageLayout";
-import SEO from "../components/seo";
+import PageLayout from "../../components/layouts/PageLayout";
+import SEO from "../../components/seo";
 import * as styles from './about.module.css'
-import ArticleItem from '../components/ArticleItem';
+import ArticleItem from '../../components/ArticleItem';
 import { graphql, useStaticQuery } from 'gatsby';
 
 const AboutPage = () => {

@@ -15,16 +15,16 @@ const Article = ({ data }) => {
 }
 
 export const articleQuery = graphql`
-  query ArticleBySlug($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query ArticleById($id: String!) {
+    markdownRemark(id: {eq: $id}) {
       html
       frontmatter {
-        slug
         title
-        date(formatString: "D MMMM YYYY")
+        date
       }
     }
   }
+
 `
 
 export default Article;

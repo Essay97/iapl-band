@@ -1,10 +1,10 @@
 import * as React from "react";
-import PageLayout from "../components/layouts/PageLayout";
-import SEO from "../components/seo";
-import ArticleItem from '../components/ArticleItem';
+import PageLayout from "../../components/layouts/PageLayout";
+import SEO from "../../components/seo";
+import ArticleItem from '../../components/ArticleItem';
 import { graphql, useStaticQuery } from 'gatsby';
 import * as styles from './media.module.css';
-import Slideshow from '../components/Slideshow';
+import Slideshow from '../../components/Slideshow';
 
 const MediaPage = () => {
   const query = useStaticQuery(graphql`
