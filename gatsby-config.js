@@ -2,11 +2,19 @@ module.exports = {
   siteMetadata: {
     title: `In A Previous Life`,
     description: `In A Previous Life is an alternative metal band from Turin. Enjoy their content and keep in touch through this website`,
-    author: `Enrico Saggiorato`,
+    author: `In A Previous Life`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms-paths`,
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `post_images`,
+        path: `${__dirname}/static/img`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -18,7 +26,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/src/pages`,
       },
     },
     `gatsby-transformer-sharp`,

@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: Essay97/iapl-band
+  branch: dev
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: media
+    label: Media
+    folder: src/pages/media
+    create: true
+    fields:
+      - { name: category, label: Category, widget: hidden, default: media }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: thumbnail, label: Thumbnail, widget: image }
+      - { name: body, label: Body, widget: markdown }
+  
+  - name: about
+    label: About
+    folder: src/pages/about
+    create: true
+    fields:
+      - { name: category, label: Category, widget: hidden, default: about }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: thumbnail, label: Thumbnail, widget: image }
+      - { name: body, label: Body, widget: markdown }

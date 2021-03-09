@@ -23,11 +23,21 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.social}>
-        <StaticImage src="../images/instagram.svg" alt="Instagram" />
-        <StaticImage src="../images/spotify.svg" alt="Spotify" />
-        <StaticImage src="../images/tiktok.svg" alt="Tiktok" />
-        <StaticImage src="../images/facebook.svg" alt="Facebook" />
-        <StaticImage src="../images/youtube.svg" alt="Youtube" />
+        <a href="https://www.instagram.com/inapreviouslifeband/">
+          <StaticImage src="../images/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="https://open.spotify.com/artist/3dMWlH0JEoJ4JIs7FlueIk?si=1YQeenN6T8yeUypQM3TL8g">
+          <StaticImage src="../images/spotify.svg" alt="Spotify" />
+        </a>
+        <a href="https://www.tiktok.com/@inapreviouslifeband?lang=en">
+          <StaticImage src="../images/tiktok.svg" alt="Tiktok" />
+        </a>
+        <a href="https://www.facebook.com/inapreviouslife1">
+          <StaticImage src="../images/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://www.youtube.com/channel/UCqF9ys-cy5fYHbr1YZXBa4Q">
+          <StaticImage src="../images/youtube.svg" alt="Youtube" />
+        </a>
       </div>
       <motion.div 
         initial={{ scale: menuOpen ? 1 : 0 }}
