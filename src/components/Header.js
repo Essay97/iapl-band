@@ -23,21 +23,21 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.social}>
-        <Link to="https://www.instagram.com/inapreviouslifeband/">
+        <a href="https://www.instagram.com/inapreviouslifeband/">
           <StaticImage src="../images/instagram.svg" alt="Instagram" />
-        </Link>
-        <Link to="https://open.spotify.com/artist/3dMWlH0JEoJ4JIs7FlueIk?si=1YQeenN6T8yeUypQM3TL8g">
+        </a>
+        <a href="https://open.spotify.com/artist/3dMWlH0JEoJ4JIs7FlueIk?si=1YQeenN6T8yeUypQM3TL8g">
           <StaticImage src="../images/spotify.svg" alt="Spotify" />
-        </Link>
-        <Link to="https://www.tiktok.com/@inapreviouslifeband?lang=en">
+        </a>
+        <a href="https://www.tiktok.com/@inapreviouslifeband?lang=en">
           <StaticImage src="../images/tiktok.svg" alt="Tiktok" />
-        </Link>
-        <Link to="https://www.facebook.com/inapreviouslife1">
+        </a>
+        <a href="https://www.facebook.com/inapreviouslife1">
           <StaticImage src="../images/facebook.svg" alt="Facebook" />
-        </Link>
-        <Link to="https://www.youtube.com/channel/UCqF9ys-cy5fYHbr1YZXBa4Q">
+        </a>
+        <a href="https://www.youtube.com/channel/UCqF9ys-cy5fYHbr1YZXBa4Q">
           <StaticImage src="../images/youtube.svg" alt="Youtube" />
-        </Link>
+        </a>
       </div>
       <motion.div 
         initial={{ scale: menuOpen ? 1 : 0 }}

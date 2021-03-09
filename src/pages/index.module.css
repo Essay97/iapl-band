@@ -25,3 +25,19 @@
     position: absolute;
     bottom: 60px;
 }
+
+
+@media screen and (min-width: 866px) {
+  .wrapChunks {
+    display: flex;
+  }
+
+  .btnPosition {
+    position: static;
+    margin: 50px 0;
+  }
+
+  .chunk {
+    height: auto;
+  }
+}

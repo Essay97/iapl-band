@@ -29,11 +29,13 @@ const IndexPage = () => (
       <Button positionClass={styles.btnPosition}>SUBSCRIBE</Button>
     </div>
 
-    <HomeChunk image={Media} btnText="Media" btnLink="/media"/>
-    <HomeChunk image={About} btnText="About Us" 
-    customStyle={{backgroundPosition: "0% 60%"}} btnLink="/about"/>
-    <HomeChunk image={Merch} btnText="Merchandise" btnLink="/merch"/>
-    <HomeChunk image={Contact} btnText="Contact Us" btnLink="/contact"/>
+    <div className={styles.wrapChunks}>
+      <HomeChunk image={Media} btnText="Media" btnLink="/media"/>
+      <HomeChunk image={About} btnText="About Us"
+      customStyle={{backgroundPosition: "0% 60%"}} btnLink="/about"/>
+      <HomeChunk image={Merch} btnText="Merchandise" btnLink="/merch"/>
+      <HomeChunk image={Contact} btnText="Contact Us" btnLink="/contact"/>
+    </div>
 
     
   </Layout>
